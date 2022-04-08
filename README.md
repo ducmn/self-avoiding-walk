@@ -1,2 +1,2 @@
 # self-avoiding-walk
-The implementation of self-avoiding-walk in Python.
+I implementated the [self-avoiding walk](https://en.wikipedia.org/wiki/Self-avoiding_walk) in Python.
