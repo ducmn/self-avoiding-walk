@@ -1,4 +1,3 @@
-# This program 
 from random import seed
 from random import random
 import math
