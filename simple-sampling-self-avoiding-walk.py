@@ -5,7 +5,7 @@ import timeit
 
 start = timeit.default_timer()
 
-# Seed the randomness so you get replicable results
+# Seed randomness so it's replicable results
 seed(1)
 
 # Number of steps to take
@@ -51,8 +51,8 @@ for n in range(1,maxn+1):
         simplesamplingSAW(n,n,0)
     
     # Extrapolate out to 4^n possible cases to estimate the number of self-avoiding walks
-    esti = 4 ** n * iti/samples
-    sd = math.sqrt(4 ** n * iti/samples * (1-iti/samples))
+    esti = 4**n * iti/samples
+    sd = math.sqrt(4**n * iti/samples * (1 - iti/samples))
     print('Steps taken: {}; Estimated number of unique walks: {:.0f}; Standard deviation of estimate: {:.4f}'.format(n, esti, sd))
 
 stop = timeit.default_timer()
